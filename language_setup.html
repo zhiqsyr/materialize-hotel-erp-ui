@@ -43,8 +43,8 @@
       <a href="#!email"><span class="black-text email">Guest@Kayumanis.org</span></a>
     </div></li>
     <li><a class="subheader">系统管理</a></li>
-    <li><a href="#" class="waves-effect grey lighten-2"><i class="material-icons">perm_identity</i>登录</a></li>
-    <li><a href="language_setup.html" class="waves-effect"><i class="material-icons">settings</i>设置</a></li>
+    <li><a href="login.html" class="waves-effect"><i class="material-icons">perm_identity</i>登录</a></li>
+    <li><a href="language_setup.html" class="waves-effect grey lighten-2"><i class="material-icons">settings</i>设置</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">版权信息</a></li>
     <li><a href="about.html" class="waves-effect"><i class="material-icons">info</i>关于</a></li>
@@ -71,16 +71,18 @@
 							<form>
 								<div class="row">
 									<div class="input-field col s10 m8 l8 offset-s1 offset-m2 offset-l2">
-										<i class="material-icons prefix">account_circle</i>
-										<input id="worker_id" type="text" class="validate">
-										<label for="worker_id">工号</label>
+										    <select>
+											    <option value="" disabled selected>Language</option>
+											    <option value="1">Simplified Chinese 简体中文</option>
+											    <option value="2">English</option>
+											    <option value="3">Indonesia</option>
+										    </select>
+										    <label>Language</label>
 									</div>
 								</div>
 								<div class="row">
 									<div class="input-field col s10 m8 l8 offset-s1 offset-m2 offset-l2">
-										<i class="material-icons prefix">vpn_key</i>
-										<input id="password" type="password" class="validate">
-										<label for="password">密码</label>
+
 									</div>
 								</div>
 							</form>

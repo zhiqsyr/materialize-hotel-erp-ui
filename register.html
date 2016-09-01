@@ -23,12 +23,12 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <style>
-        header, main, footer {
+    header, main, footer {
       padding-left: 300px;
     }
 
     @media only screen and (max-width : 992px) {
-      header, main, footer {
+    	header, main, footer {
         padding-left: 0;
       }
     }
@@ -43,58 +43,72 @@
       <a href="#!email"><span class="black-text email">Guest@Kayumanis.org</span></a>
     </div></li>
     <li><a class="subheader">系统管理</a></li>
-    <li><a href="#" class="waves-effect grey lighten-2"><i class="material-icons">perm_identity</i>登录</a></li>
+    <li><a href="login.html" class="waves-effect"><i class="material-icons">perm_identity</i>登录</a></li>
     <li><a href="language_setup.html" class="waves-effect"><i class="material-icons">settings</i>设置</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">版权信息</a></li>
     <li><a href="about.html" class="waves-effect"><i class="material-icons">info</i>关于</a></li>
   </ul>
-  
-  <main>
-  <nav>
+  </a>
+  <main>  <nav>
     <div class="nav-wrapper">
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i>
       <a href="#" class="brand-logo right hide-on-med-and-down">Materialize Property Management System</a>
-      <a href="#" class="brand-logo center hide-on-large-only">登录</a>
+      <a href="#" class="brand-logo center hide-on-large-only">注册</a>
       <ul class="left">
 
       </ul>
     </div>
   </nav>
+	<!--<nav>
+		<div class="nav-wrapper">
+			<a class="brand-logo center">dwz.wiki 管理中心</a>
+		</div>
+	</nav>-->
     <div class="row">
 		<div class="col s12 m10 l8 offset-s0 offset-m1 offset-l2">
 				<div class="card">
 					<div class="card-stacked">
 						<div class="card-content">
 							<div class="center">
-							<img src=static/Kayumanis.jpg height=150></div>
-							<form>
-								<div class="row">
-									<div class="input-field col s10 m8 l8 offset-s1 offset-m2 offset-l2">
-										<i class="material-icons prefix">account_circle</i>
-										<input id="worker_id" type="text" class="validate">
-										<label for="worker_id">工号</label>
+							<img src=static/Kayumanis.jpg height=200></div>
+							<div class="row">
+								<form>
+									<div class="row">
+										<div class="input-field col s12 m6 l6">
+											<i class="material-icons prefix">account_circle</i>
+											<input id="user_name" type="text" class="validate">
+											<label for="user_name">姓名</label>
+										</div>
+										<div class="input-field col s12 m6 l6">
+											<i class="material-icons prefix">class</i>
+											<input id="worker_id" type="text" class="validate">
+											<label for="worker_id">工号</label>
+										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="input-field col s10 m8 l8 offset-s1 offset-m2 offset-l2">
-										<i class="material-icons prefix">vpn_key</i>
-										<input id="password" type="password" class="validate">
-										<label for="password">密码</label>
+									<div class="row">
+										<div class="input-field col s12 m6 l6">
+											<i class="material-icons prefix">phone</i>
+											<input id="phone_number" type="text" class="validate">
+											<label for="phone_number">手机</label>
+										</div>
+										<div class="input-field col s12 m6 l6">
+											<i class="material-icons prefix">vpn_key</i>
+											<input id="password" type="text" class="validate">
+											<label for="password">密码</label>
+										</div>
 									</div>
-								</div>
-							</form>
+								</form>
 							</div>
+						</div>
 						<div class="card-action">
-							<a href="#signin">登录</a>
-							<a href="reset.html">忘记密码</a>
-							<a href="register.html">注册</a>
+							<a href="#submit">注册</a>
 						</div>
 					</div>
 			</div>
   		</div>
-  	</div>
-  	</main>	
+  	</div></main>
+
     <!-- The following defines where the Materialize CSS CDN files locate.
     <script src='//cdn.bootcss.com/jquery/3.1.0/jquery.min.js'></script>
     <script src='//cdn.bootcss.com/materialize/0.97.7/js/materialize.min.js'></script> -->
